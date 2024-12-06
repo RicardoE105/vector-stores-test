@@ -1,5 +1,5 @@
 import * as lancedb from "@lancedb/lancedb";
-import sampleData from "../sample-data.json" assert { type: "json" };
+import sampleData from "../../sample-data.json" assert { type: "json" };
 
 const preparedSampleData = sampleData.map((row) => {
     return {    

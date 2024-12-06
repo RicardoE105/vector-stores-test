@@ -1,0 +1,7 @@
+
+{
+  "type": "module",
+  "dependencies": {
+    "@lancedb/lancedb": "^0.13.0"
+  }
+}

@@ -1,5 +1,5 @@
 
-import sampleData from "../sample-data.json" assert { type: "json" };
+import sampleData from "../../sample-data.json" assert { type: "json" };
 import { createClient } from "@libsql/client";
 
 const connection = createClient({
@@ -43,7 +43,7 @@ async function insertMultipleEmbeddings(embeddings) {
 async function main() {
     const createTableQuery = `
       CREATE TABLE IF NOT EXISTS embeddings (
-        vector F32_BLOB(4) NOT NULL -- Fixed length for a 4-element vector
+        vector F32_BLOB(1536) NOT NULL -- Fixed length for a 4-element vector
       );
     `;
   
